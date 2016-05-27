@@ -1,0 +1,41 @@
+#header1 {
+	background-color: #303030;
+	color: white;
+	height: 60px;
+	font-size: 14px;
+	color: #fff;
+  	display: flex;
+  	align-items: center;
+}
+
+.logo {
+	/*display: inline-block;*/
+    /*float: left;*/
+    width: 50%;
+}
+
+.uber_logo {
+	/*display: inline;*/
+	transform: scale(0.5, 0.5);
+	padding: 0px;
+	border: 2px;
+	/*width: 100px;*/
+}
+
+img.header-logo {
+    margin: 2px 5px 5px 5px;
+    height: 30px;
+}
+
+.iblock {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header-dropdown {
+    margin-bottom: -15px;
+}
+
+#logo-container {
+	padding-left: 30px;
+}
