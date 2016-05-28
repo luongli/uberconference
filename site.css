@@ -2,10 +2,12 @@
 	background-color: #303030;
 	color: white;
 	height: 60px;
+    padding: 0px 0px;
 	font-size: 14px;
 	color: #fff;
   	display: flex;
   	align-items: center;
+  	font-family: "Proxima Nova Regular", Helvetica, sans-serif;
 }
 
 .logo {
@@ -27,15 +29,67 @@ img.header-logo {
     height: 30px;
 }
 
-.iblock {
-    display: inline-block;
-    vertical-align: top;
-}
-
 .header-dropdown {
-    margin-bottom: -15px;
+    margin-bottom: -1px;
 }
 
 #logo-container {
 	padding-left: 30px;
+}
+
+#logo-container-right {
+	padding-right: 30px;
+	text-align: right;
+    vertical-align: middle;
+}
+
+#upgrade-cue {
+    cursor: pointer;
+    line-height: 60px;
+    display: inline-block;
+    padding: 0px 15px 1px 10px;
+}
+
+.sprite-xs {
+    background-image: url(https://www.uberconference.com/static/img2/sprites/v2-sprite-xs.png?v=15);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+#upgrade-cue .sprite-xs-upgrade-star {
+    padding-bottom: 1px;
+}
+
+.iblock {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.profile-picture-sm{
+    background-color: transparent;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50% background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+}
+
+.profile-picture-holder {
+    background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+
+}
+
+
+.circle {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    height: 30px;
+    width: 30px;
 }
