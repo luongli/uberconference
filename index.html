@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="site.css">
+  <link rel="stylesheet" type="text/css" href="contents.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
@@ -45,7 +46,7 @@
 
   <!-- The sub header -->
   <nav class="navbar-fixed-top">
-    <div class="container-fliud" id="subheader">
+    <div class="container-fluid" id="subheader">
       <div class="subheader-content">
         <span class="subheader-item">
           <div id="copy-info" class="button button-small button-green">Copy</div>
@@ -57,34 +58,30 @@
     </div>    
   </nav>
 
+  <!-- Content -->
   <div id="content">
-    <!-- The second row -->
-    <div class="row">
-    	<div class="col-sm-12">
-    		<h1>The second row.</h1>
-    	</div>
-    </div>
-    <!-- The third row -->
-    <div class="row">
-    	<div class="col-sm-12">
-    		<h1>The third row.</h1>
-        <div class="profile-picture-holder circle" style="background-image:url(http://i.stack.imgur.com/9R36p.png)"></div>
-    	</div>
-    </div>
-    <!-- The second row -->
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>The second row.</h1>
-      </div>
-    </div>
-    <!-- The third row -->
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>The third row.</h1>
-        <div class="profile-picture-holder circle" style="background-image:url(http://i.stack.imgur.com/9R36p.png)"></div>
+    <div class="container-fluid">
+      <div id="dash-center">
+        <div id="dash-horizon">
+          <div id="dash-title">
+            <div id="welcome-hd" class="dash-header">
+              Welcome to UberConference
+            </div>
+            <div id="welcome-txt" class="body-copy">  
+              When would you like to have your next conference?
+              <div id="welcome-test-call">
+                <a target="_blank" class="link body-copy" href="/system">Test Computer Audio</a>
+              </div>
+            </div>
+          </div>
+          <div id="dash-dots"></div>
+        </div>
       </div>
     </div>
   </div>
+  
+</div>
+
 
 </body>
 </html>
