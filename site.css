@@ -232,6 +232,7 @@ li a:hover {
     right: 21px;
     min-width: 161px;
     max-width: 163px;
+    display: none;
 }
 
 #dismiss-dialpad-promo {
