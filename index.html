@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+<script src="menu.js"></script>
 <div class="container-fluid">
   <!-- The first row -->
   <nav class="navbar-fixed-top">
@@ -23,7 +23,7 @@
             <img src="resources/uberconference_black.png" class="header-logo">
           </a>
           <div id="header-dropdown" class="iblock">
-            <img src="resources/arrow.png" class="header-dropdown">
+            <img src="resources/arrow.png"  onmouseover="showAppMenu()">
           </div>
         </div>
     	</div>
@@ -118,8 +118,8 @@
   <a href="#" id="support-icon">
     
   </a>
-
-  <ul id="app-menu" class="header-menu">
+<div>
+  <ul id="app-menu" class="header-menu" onmouseleave="hideAppMenu()">
     <li class="ui-menu-item" role="presentation"><a href="/features" class="ui-menu-text-item ui-corner-all" id="ui-id-21" tabindex="-1" role="menuitem">Features</a></li>
     <li class="ui-menu-item" role="presentation"><a href="/pricing" class="ui-menu-text-item ui-corner-all" id="ui-id-22" tabindex="-1" role="menuitem">Pricing</a></li>
     <li class="ui-menu-item" role="presentation"><a href="/mobile" class="ui-menu-text-item ui-corner-all" id="ui-id-23" tabindex="-1" role="menuitem">Mobile</a></li>
@@ -127,9 +127,9 @@
     <li class="ui-menu-item" role="presentation"><a href="/integrations" class="ui-menu-text-item ui-corner-all" id="ui-id-25" tabindex="-1" role="menuitem">Integrations</a></li>
     <li class="ui-menu-item" role="presentation"><a href="/helplogin" class="ui-menu-text-item ui-corner-all" id="ui-id-26" tabindex="-1" role="menuitem">Help</a></li>
     <li class="ui-menu-item" role="presentation"><a href="http://blog.dialpad.com/" class="ui-menu-text-item ui-corner-all" id="ui-id-27" tabindex="-1" role="menuitem">Blog</a></li>
-    <li class="ui-menu-item" role="presentation">
-        <a class="ui-menu-text-item ui-corner-all" aria-haspopup="true" id="ui-id-28" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>More <div class="sub-menu-arrow"></div></a>
-        <ul class="header-menu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" >
+    <li class="ui-menu-item" role="presentation" id="last-li">
+        <a class="ui-menu-text-item ui-corner-all" onmouseover="showSubmenu()" aria-haspopup="true" id="ui-id-28" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>More <div class="sub-menu-arrow"></div></a>
+        <ul class="header-menu ui-menu ui-widget ui-widget-content ui-corner-all submenu" id="submenu" role="menu" aria-hidden="true" aria-expanded="false" onmouseleave="hideSubmenu()" >
             <li class="ui-menu-item" role="presentation"><a href="/customers" class="ui-menu-text-item ui-corner-all" id="ui-id-29" tabindex="-1" role="menuitem">Customers</a></li>
             <li class="ui-menu-item" role="presentation"><a href="/press" class="ui-menu-text-item ui-corner-all" id="ui-id-30" tabindex="-1" role="menuitem">Press</a></li>
             <li class="ui-menu-item" role="presentation"><a href="/company" class="ui-menu-text-item ui-corner-all" id="ui-id-31" tabindex="-1" role="menuitem">Company</a></li>
@@ -139,6 +139,7 @@
         </ul>
     </li>
   </ul>
+<div>
 
   <ul id="user-menu" class="header-menu snappy ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0" aria-activedescendant="ui-id-37" style="top: 60px; left: 720px">
     <li id="authorized-logins-holder" class="ui-widget-content ui-menu-divider"><div><div id="authorized-logins"></div></div></li>

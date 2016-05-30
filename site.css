@@ -37,6 +37,12 @@ img.header-logo {
 
 .header-dropdown {
     margin-bottom: -1px;
+    height: 60px;
+}
+
+#header-dropdown {
+    padding-top: 20px;
+    height: 60px;
 }
 
 #logo-container {
@@ -156,6 +162,7 @@ img.header-logo {
     left: 150px;
     width: 170px;
     z-index: 10;
+    display: none;
 }
 
 .header-menu {
@@ -213,8 +220,8 @@ li a:hover {
     margin-left: 100px;
 }
 
-ul[role="menu"] {
-    display: block;
+.submenu {
+    display: none;
     top: 181px;
     left: 168px;
 }
@@ -232,4 +239,10 @@ ul[role="menu"] {
     top: -107px;
     right: -145px;
     cursor: pointer;
+}
+
+
+#ui-id-28:hover .submenu {
+    display: block;
+    z-index: 4;
 }
