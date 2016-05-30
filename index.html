@@ -45,7 +45,7 @@
 
 
   <!-- The sub header -->
-  <nav class="navbar-fixed-top">
+  <nav class="navbar-fixed-top" style="z-index: 1">
     <div class="container-fluid" id="subheader">
       <div class="subheader-content">
         <span class="subheader-item">
@@ -121,7 +121,37 @@
 
   <ul id="app-menu" class="header-menu">
     <li class="ui-menu-item" role="presentation"><a href="/features" class="ui-menu-text-item ui-corner-all" id="ui-id-21" tabindex="-1" role="menuitem">Features</a></li>
+    <li class="ui-menu-item" role="presentation"><a href="/pricing" class="ui-menu-text-item ui-corner-all" id="ui-id-22" tabindex="-1" role="menuitem">Pricing</a></li>
+    <li class="ui-menu-item" role="presentation"><a href="/mobile" class="ui-menu-text-item ui-corner-all" id="ui-id-23" tabindex="-1" role="menuitem">Mobile</a></li>
+    <li class="ui-menu-item" role="presentation"><a href="/international" class="ui-menu-text-item ui-corner-all" id="ui-id-24" tabindex="-1" role="menuitem">International</a></li>
+    <li class="ui-menu-item" role="presentation"><a href="/integrations" class="ui-menu-text-item ui-corner-all" id="ui-id-25" tabindex="-1" role="menuitem">Integrations</a></li>
+    <li class="ui-menu-item" role="presentation"><a href="/helplogin" class="ui-menu-text-item ui-corner-all" id="ui-id-26" tabindex="-1" role="menuitem">Help</a></li>
+    <li class="ui-menu-item" role="presentation"><a href="http://blog.dialpad.com/" class="ui-menu-text-item ui-corner-all" id="ui-id-27" tabindex="-1" role="menuitem">Blog</a></li>
+    <li class="ui-menu-item" role="presentation">
+        <a class="ui-menu-text-item ui-corner-all" aria-haspopup="true" id="ui-id-28" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>More <div class="sub-menu-arrow"></div></a>
+        <ul class="header-menu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" >
+            <li class="ui-menu-item" role="presentation"><a href="/customers" class="ui-menu-text-item ui-corner-all" id="ui-id-29" tabindex="-1" role="menuitem">Customers</a></li>
+            <li class="ui-menu-item" role="presentation"><a href="/press" class="ui-menu-text-item ui-corner-all" id="ui-id-30" tabindex="-1" role="menuitem">Press</a></li>
+            <li class="ui-menu-item" role="presentation"><a href="/company" class="ui-menu-text-item ui-corner-all" id="ui-id-31" tabindex="-1" role="menuitem">Company</a></li>
+            <li class="ui-menu-item" role="presentation"><a href="/jobs" class="ui-menu-text-item ui-corner-all" id="ui-id-32" tabindex="-1" role="menuitem">Jobs</a></li>
+            <li class="ui-menu-item" role="presentation"><a href="/developers" class="ui-menu-text-item ui-corner-all" id="ui-id-33" tabindex="-1" role="menuitem">Developers</a></li>
+            <li class="ui-menu-item" role="presentation"><a href="/legal" class="ui-menu-text-item ui-corner-all" id="ui-id-34" tabindex="-1" role="menuitem">Legal</a></li>
+        </ul>
+    </li>
   </ul>
+
+  <ul id="user-menu" class="header-menu snappy ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0" aria-activedescendant="ui-id-37" style="top: 100px; left: 500px">
+    <li id="authorized-logins-holder" class="ui-widget-content ui-menu-divider"><div><div id="authorized-logins"></div></div></li>
+    <li class="ui-menu-item" role="presentation"><a href="#conferences" class="ui-menu-text-item ui-corner-all" id="ui-id-35" tabindex="-1" role="menuitem"><div class="sprite-xs sprite-xs-menu-conference sprite-xs-header-menu iblock"></div>Conferences</a></li>
+    <li class="ui-menu-item" role="presentation"><a href="#account" class="ui-menu-text-item ui-corner-all" id="ui-id-36" tabindex="-1" role="menuitem"><div class="sprite-xs sprite-xs-menu-account sprite-xs-header-menu iblock"></div>Account</a></li>
+    <li class="ui-menu-item" role="presentation"><a href="#settings" class="ui-menu-text-item ui-corner-all" id="ui-id-37" tabindex="-1" role="menuitem"><div class="sprite-xs sprite-xs-menu-settings sprite-xs-header-menu iblock"></div>Settings</a></li>
+    <li class="ui-menu-item" role="presentation"><a target="_blank" href="https://www.uberconference.com/userguide" class="ui-menu-text-item ui-corner-all" id="ui-id-38" tabindex="-1" role="menuitem"><div class="sprite-xs sprite-xs-menu-userguide sprite-xs-header-menu iblock"></div>User Guide</a></li>
+    <li class="ui-menu-item" role="presentation"><a href="#logout" class="ui-menu-text-item ui-corner-all" id="ui-id-39" tabindex="-1" role="menuitem"><div class="sprite-xs sprite-xs-menu-signout sprite-xs-header-menu iblock"></div>Sign Out</a></li>
+    <div id="dialpad-promo-menuitem" class="ui-menu-item" role="presentation">
+      <a class="link ui-corner-all" style="background-color: rgba(48, 182, 121, 0.99); color: white;" target="_blank" href="https://dialpad.com/l/uc?utm_campaign=sw-us-q4-uc-promo&amp;utm_source=uberconference&amp;utm_medium=uc-in-app&amp;utm_content=uc-menu" id="ui-id-40" tabindex="-1" role="menuitem">Try our other<br>product, Dialpad <br>– the phone system<br>for the modern<br>workplace.</a>
+    <span id="dismiss-dialpad-promo">X</span>
+    </div>
+</ul>
 
 </div>
 

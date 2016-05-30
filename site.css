@@ -152,7 +152,7 @@ img.header-logo {
 
 #app-menu {
     position: absolute;
-    top: 200px;
+    top: 60px;
     left: 150px;
     width: 170px;
     z-index: 10;
@@ -174,4 +174,62 @@ img.header-logo {
     padding: 0;
     width: 100%;
     list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+}
+
+.ui-menu-text-item {
+    line-height: 30px;
+}
+
+li.ui-menu-item a {
+    font-size: 14px;
+    color: #393939;
+    line-height: 26px;
+    padding: 0 15px;
+    white-space: nowrap;
+}
+
+.ui-menu-item a {
+    text-decoration: none;
+    display: block;
+    padding: 2px .4em;
+    line-height: 1.5;
+    min-height: 0;
+    font-weight: normal;
+}
+
+li a:hover {
+    background-color: #41aad3;
+    color: #fff;
+    margin: 0px;
+}
+
+.sub-menu-arrow {
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 8px solid #868686;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+ul[role="menu"] {
+    display: block;
+    top: 213px;
+    left: 170px;
+}
+
+#user-menu {
+    position: absolute;
+    top: 59px;
+    right: 21px;
+    min-width: 161px;
+    max-width: 163px;
+}
+
+#dismiss-dialpad-promo {
+    position: relative;
+    top: -107px;
+    right: -145px;
+    cursor: pointer;
 }
