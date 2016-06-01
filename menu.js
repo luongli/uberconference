@@ -24,8 +24,8 @@ function showAppMenu() {
 function hideAppMenu() {
 	console.log("activated");
 	var menu = document.getElementById("app-menu"); 
-    var id = setInterval(frame, 100);
-    var top = -200;
+    var id = setInterval(frame, 5);
+    var top = 60;
     function frame() {
         if (top == -200) {
             return;
@@ -35,7 +35,7 @@ function hideAppMenu() {
         }
     }
 
-    menu.style.display = "none";
+    //menu.style.display = "none";
 }
 
 
@@ -57,10 +57,10 @@ function showUserMenu() {
 function hideUserMenu() {
 	console.log("activated");
 	var menu = document.getElementById("user-menu"); 
-    var id = setInterval(frame, 100);
-    var top = -200;
+    var id = setInterval(frame, 5);
+    var top = 60;
     function frame() {
-        if (top == -200) {
+        if (top == -400) {
             return;
         } else {
             top -= 10; 
@@ -68,5 +68,5 @@ function hideUserMenu() {
         }
     }
 
-    menu.style.display = "none";
+    //menu.style.display = "none";
 }
