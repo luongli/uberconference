@@ -14,7 +14,10 @@ function runClock() {
 
 	var second = 0;
     var minute = d.getMinutes()*600;
+    console.log(minute);
     hour *= 36000;
+    hour += minute;
+    console.log(hour);
 
 	var hourhand = document.getElementById("dash-hour");
 	var minutehand = document.getElementById("dash-minute");
@@ -40,12 +43,16 @@ function runClock() {
         hour += 1;
 
         secondhand.style.transform = "rotate(" + second*6/10 + "deg)";
+        minutehand.style.transform = "rotate(" + minute/100 + "deg)";
+        hourhand.style.transform = "rotate(" + hour/1200 + "deg)";
+        /*
         if(minute%150 == 0) {
         	minutehand.style.transform = "rotate(" + minute/1000 + "deg)";
         }
         if(hour%1200) {
         	hourhand.style.transform = "rotate(" + hour/1200 + "deg)";
         }
+        */
 
     }
 }
