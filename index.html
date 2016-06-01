@@ -93,10 +93,12 @@
             <div class="col-xs-6" style="padding-left: 46px;">
               <div class="row" style="margin-left: 0px">
                 <div id="dash-calendar">
-                  <div class="dash-cal-days">
+                  <div class="dash-cal-days" id="calendar_content">
                     <div class="dash-cal-day">&nbsp;</div>
-                    <div class="dash-cal-day">1</div>
+                    <!--
+                    <div class="dash-cal-day"><div class="dash-cal-today">1</div></div>
                     <div class="dash-cal-day">2</div>
+                    -->
                   </div>
                 </div>
                 <div class="row" style="margin-left: 0px">
@@ -141,7 +143,7 @@
   </ul>
 <div>
 
-  <ul id="user-menu" onmouseleave="hideUserMenu()" class="header-menu snappy ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0" aria-activedescendant="ui-id-37" style="top: 60px; left: 720px">
+  <ul id="user-menu" onmouseleave="hideUserMenu()" class="header-menu snappy ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0" aria-activedescendant="ui-id-37" style="top: 60px; right: 10px">
     <li id="authorized-logins-holder" class="ui-widget-content ui-menu-divider"><div><div id="authorized-logins"></div></div></li>
     <li class="ui-menu-item" role="presentation"><a href="#conferences" class="ui-menu-text-item ui-corner-all" id="ui-id-35" tabindex="-1" role="menuitem"><div class="sprite-xs sprite-xs-menu-conference sprite-xs-header-menu iblock"></div>Conferences</a></li>
     <li class="ui-menu-item" role="presentation"><a href="#account" class="ui-menu-text-item ui-corner-all" id="ui-id-36" tabindex="-1" role="menuitem"><div class="sprite-xs sprite-xs-menu-account sprite-xs-header-menu iblock"></div>Account</a></li>

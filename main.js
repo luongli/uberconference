@@ -1,4 +1,9 @@
-document.onload = runClock();
+document.onload = setDateTime();
+
+function setDateTime() {
+	setDate();
+	runClock();
+}
 
 function runClock() {
 	var d = new Date();
@@ -43,4 +48,26 @@ function runClock() {
         }
 
     }
+}
+
+function setDate() {
+	var d = new Date();
+	var currentDate = d.getDate();
+	var month = d.getMonth();
+	var year = d.getYear();
+	var d2 = new Date(year, month+1, 0);
+	var daysInMonth = d2.getDate();
+	var calendar = document.getElementById("calendar_content");
+	var i;
+	var content = calendar.innerHTML;
+
+	for(i = 1; i <= daysInMonth; i++) {
+		if( i == currentDate) {
+			content += '<div class="dash-cal-day"><div class="dash-cal-today">' + i + '</div></div>' + '\n';
+		} else {
+			content += '<div class="dash-cal-day">' + i + '</div>' + '\n';
+		}
+	}
+
+	calendar.innerHTML = content;
 }
