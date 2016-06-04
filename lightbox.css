@@ -1,0 +1,139 @@
+.lightbox-holder {
+	position: fixed;
+    z-index: 1000001;
+    height: 0;
+    width: 100%;
+}
+
+.lightbox-holder, .high-center {
+	top: 45%;
+}
+
+#lightbox .framed .lightbox {
+    width: 700px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 4px 4px 1px #dedede;
+    background-color: #FFF;
+}
+
+#lightbox .lightbox {
+	margin: auto;
+}
+
+#lightbox-shell {
+
+}
+
+.lightbox-header {
+    font-size: 24px;
+    font-family: "Proxima Nova Semibold";
+    color: #393939;
+    background-color: #EDEDED;
+    position: relative;
+    padding: 0px 23px;
+    height: 65px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#header-content {
+
+}
+
+.lightbox-icon-holder {
+    width: 55px;
+    margin-top: 4px;
+}
+
+.lightbox-icon {
+    position: relative;
+    left: -10px;
+}
+
+.sprite-m.sprite-m-calendar-2 {
+    background-position: -1260px 0;
+}
+
+.sprite-m {
+    background-image: url(https://www.uberconference.com/static/img2/sprites/v2-sprite-m.png?v=9);
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+}
+
+.lightbox-title {
+    display: inline-block;
+    line-height: 65px;
+    font-family: "Proxima Nova Semibold";
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 540px;
+    text-transform: capitalize;
+}
+
+#lightbox-title {
+	color: #393939;
+}
+
+.lightbox-close-holder {
+    display: inline-block;
+    right: 23px;
+    width: 30px;
+    margin: 16px 0;
+    position: absolute;
+}
+
+#lightbox #lightbox-close, #lightbox #lightbox-close-round {
+    cursor: pointer;
+}
+
+.lightbox-close {
+    background-position: -630px 0px;
+}
+
+.sprite-xs {
+    background-image: url(https://www.uberconference.com/static/img2/sprites/v2-sprite-xs.png?v=15);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.rel {
+    position: relative;
+}
+
+#lightbox-content {
+    padding: 23px;
+}
+
+.lightbox-content {
+    max-height: 600px;
+}
+
+.schedule-calendar {
+    width: 218px;
+    height: 218px;
+    background-color: #ededed;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    border-radius: 15px;
+    color: #393939;
+}
+
+.ui-widget {
+    font-size: 14px;
+}
+
+.ui-datepicker {
+    width: 196px;
+    margin-left: 12px;
+    padding: 6px 0 0 0;
+}
+
+.ui-datepicker-header {
+    position: relative;
+    padding: .2em 0;
+}

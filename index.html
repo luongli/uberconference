@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="site.css">
   <link rel="stylesheet" type="text/css" href="contents.css">
+  <link rel="stylesheet" type="text/css" href="lightbox.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
@@ -120,6 +121,7 @@
   <a href="#" id="support-icon">
     
   </a>
+
 <div>
   <ul id="app-menu" class="header-menu" onmouseleave="hideAppMenu()">
     <li class="ui-menu-item" role="presentation"><a href="/features" class="ui-menu-text-item ui-corner-all" id="ui-id-21" tabindex="-1" role="menuitem">Features</a></li>
@@ -141,8 +143,9 @@
         </ul>
     </li>
   </ul>
-<div>
+</div>
 
+<div>
   <ul id="user-menu" onmouseleave="hideUserMenu()" class="header-menu snappy ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0" aria-activedescendant="ui-id-37" style="top: -400px; right: 10px">
     <!--<li id="authorized-logins-holder" class="ui-widget-content ui-menu-divider"><div><div id="authorized-logins"></div></div></li>-->
     <li class="ui-menu-item" role="presentation"><a href="#conferences" class="ui-menu-text-item ui-corner-all" id="ui-id-35" tabindex="-1" role="menuitem"><div class="sprite-xs sprite-xs-menu-conference sprite-xs-header-menu iblock"></div>Conferences</a></li>
@@ -154,8 +157,43 @@
       <a class="link ui-corner-all" style="background-color: rgba(48, 182, 121, 0.99); color: white;" target="_blank" href="https://dialpad.com/l/uc?utm_campaign=sw-us-q4-uc-promo&amp;utm_source=uberconference&amp;utm_medium=uc-in-app&amp;utm_content=uc-menu" id="ui-id-40" tabindex="-1" role="menuitem">Try our other<br>product, Dialpad <br>– the phone system<br>for the modern<br>workplace.</a>
     <span id="dismiss-dialpad-promo">X</span>
     </div>
-</ul>
+  </ul>
+</div>
+</div>
 
+<!-- make the light box -->
+<div id="lightbox" class="high-center">
+  <div class="framed lightbox-holder">
+    <div id="lightbox-shell" class="lightbox lightbox-anim-in" style="margin-top: -170px;">
+      <div class="lightbox-header">
+        <div id="header-content">
+          <div class="lightbox-icon-holder iblock"><div id="lightbox-icon" class="lightbox-icon sprite-m sprite-m-calendar-2"></div></div>
+          <div class="lightbox-title iblock"><span id="lightbox-title" class="lightbox-lg-title">Schedule a Conference</span></div>
+          <div class="lightbox-close-holder">
+          <div id="lightbox-close" class="lightbox-close sprite-xs " title="Close"></div>
+          </div>
+        </div>
+      </div>
+      <div class="rel">
+        <div id="lightbox-content" class="lightbox-content">
+          <div id="sch-conference">
+            <div class="body-copy">
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="schedule-calendar">
+                    <div class="ui-widget ui-datepicker">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-8">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script src="main.js"></script>
