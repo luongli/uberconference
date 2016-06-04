@@ -137,3 +137,83 @@
     position: relative;
     padding: .2em 0;
 }
+
+.ui-datepicker-prev {
+    left: 0px;
+    background-position: -150px 0px;
+    background-image: url(https://www.uberconference.com/static/img2/sprites/v2-sprite-xs.png?v=1);
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.ui-datepicker-next {
+    right: 0px;
+    background-position: -1050px 0px;
+    background-image: url(https://www.uberconference.com/static/img2/sprites/v2-sprite-xs.png?v=1);
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.ui-datepicker-title {
+    font-size: 12px;
+    color: #393939;
+    text-transform: uppercase;
+    margin: 0 2.3em;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.ui-datepicker table {
+    width: 100%;
+    font-size: .9em;
+    border-collapse: collapse;
+    margin: 0 0 .4em;
+}
+
+.ui-datepicker th {
+    padding: .7em .3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+}
+
+.schedule-calendar thead {
+    opacity: .50;
+    font-size: 12px;
+}
+
+.ui-datepicker th {
+    padding: .7em .3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+}
+
+.schedule-calendar .ui-datepicker td {
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.ui-state-disabled {
+    cursor: default !important;
+}
+
+.ui-state-default {
+    border: 0;
+    color: #393939;
+    text-align: center;
+    font-size: 14px;
+}
+
+.ui-datepicker td a {
+    display: block;
+    padding: .2em;
+    text-align: right;
+    text-decoration: none;
+}
