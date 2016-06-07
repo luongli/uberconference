@@ -82,6 +82,7 @@ function setDate() {
 
 function addDatePicker() {
 	$(".schedule-calendar").pickmeup({
-		flat	: true
+		flat	: true,
+		change	: function(formated){ $("#conference-date").val(formated);}
 	});
 }
