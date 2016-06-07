@@ -91,9 +91,14 @@ function showLightBox() {
 	var $form = $("#lightbox");
 	$.colorbox({transition:"elastic",
 		overlayClose:true,
-		width:"50%",
-		height:"50%",
 		closeButton:false,
+		left:"0px",
+		opacity:0.6,
 		inline:true,
 		href:$form});
+	addDatePicker();
+}
+
+function hideLightBox() {
+	$.colorbox.close();
 }
