@@ -3,7 +3,7 @@ document.onload = setDateTime();
 function setDateTime() {
 	setDate();
 	runClock();
-	addDatePicker();
+	/*addDatePicker();*/
 }
 
 function runClock() {
@@ -85,4 +85,15 @@ function addDatePicker() {
 		flat	: true,
 		change	: function(formated){ $("#conference-date").val(formated);}
 	});
+}
+
+function showLightBox() {
+	var $form = $("#lightbox");
+	$.colorbox({transition:"elastic",
+		overlayClose:true,
+		width:"50%",
+		height:"50%",
+		closeButton:false,
+		inline:true,
+		href:$form});
 }
