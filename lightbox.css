@@ -217,3 +217,272 @@
     text-align: right;
     text-decoration: none;
 }
+
+.schedule-input-wrapper {
+    position: relative;
+    height: 44px;
+}
+
+input.uc-input {
+    font-size: 14px;
+    color: #393939;
+    border: 1px solid #e5e5de;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+}
+
+.schedule-input {
+    font-size: 14px;
+    color: #393939;
+    border: 1px solid #e5e5de;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    padding: 14px;
+    width: 100%;
+    height: 44px;
+}
+
+.customized-col {
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+#second-row-time-holder {
+    margin: 16px 0px 0px 0px;
+    padding-left: 18px;
+}
+
+.pure-u {
+    display: inline-block;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.schedule-input-wrapper {
+    position: relative;
+    height: 44px;
+}
+
+.schedule-date #schedule-callout {
+    -webkit-transform: rotate(360deg);
+    border-style: inset;
+    z-index: 1000002;
+    position: absolute;
+    left: -9px;
+    top: 13px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 9px 10px 9px 0;
+    border-color: transparent #efefef transparent transparent;
+}
+
+.sprite-xs.sprite-xs-cal {
+    background-position: -180px 0;
+}
+
+.sprint-xs-input {
+    position: absolute;
+    margin-top: 6px;
+}
+
+.sprite-xs {
+    background-image: url(https://www.uberconference.com/static/img2/sprites/v2-sprite-xs.png?v=15);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.schedule-date #conference-date {
+    background-color: #efefef;
+    border-color: #efefef;
+}
+
+.schedule-input.icon-input {
+    padding-left: 30px;
+}
+
+.sprite-xs.sprite-xs-cal {
+    background-position: -180px 0;
+}
+
+.sprint-xs-input {
+    position: absolute;
+    margin-top: 6px;
+}
+
+.sprite-xs {
+    background-image: url(https://www.uberconference.com/static/img2/sprites/v2-sprite-xs.png?v=15);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.form-dropdown {
+    position: relative;
+    height: 44px;
+}
+
+.sprite-xs.sprite-xs-clock {
+    background-position: -210px 0;
+}
+
+.sprint-xs-input {
+    position: absolute;
+    margin-top: 6px;
+}
+.sprite-xs {
+    background-image: url(https://www.uberconference.com/static/img2/sprites/v2-sprite-xs.png?v=15);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.form-dropdown input.uc-input {
+    background-origin: content-box;
+    background-image: url('https://www.uberconference.com/static/img2/downarrow.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.schedule-input.icon-input {
+    padding-left: 30px;
+}
+
+.schedule-menu {
+    position: relative;
+    top: -10px;
+    background: #fff;
+    padding: 0;
+    display: none;
+    border: 1px solid #e5e5de;
+    -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, .25);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, .25);
+    z-index: 4;
+    max-height: 130px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ui-menu {
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+    display: block;
+    outline: none;
+}
+
+.ui-menu .ui-menu-item {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+}
+
+.schedule-menu li {
+    text-align: left;
+    cursor: pointer;
+}
+
+.ui-menu .ui-menu-item a {
+    padding: 0px 15px;
+}
+
+.ui-menu .ui-menu-item a {
+    text-decoration: none;
+    display: block;
+    padding: 2px .4em;
+    line-height: 1.5;
+    min-height: 0;
+    font-weight: normal;
+}
+
+.sprite-xs.sprite-xs-question-mark-white-bg {
+    background-position: -2220px 0;
+}
+
+.sprite-xs.sprite-xs-hyperloop {
+    background-position: -240px 0;
+}
+
+.link {
+    color: #41AAD3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.lightbox-back {
+    margin-right: 16px;
+}
+
+.button-height-text {
+    height: 40px;
+    line-height: 41px;
+    vertical-align: middle;
+}
+
+.button.button-medium {
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 0px 21px;
+    height: 40px;
+    line-height: 41px;
+}
+
+.button.button-blue {
+    background-color: #41AAD3;
+    color: #ffffff;
+}
+
+.button {
+    text-transform: uppercase;
+    font-family: "Proxima Nova Semibold", Helvetica, sans-serif;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.schedule-dots {
+    margin: 12px auto 0 auto;
+    text-align: center;
+    line-height: 0px;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    margin: 0 4px;
+}
+
+.circle {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.step-dot-on {
+    background: #000000;
+}
+
+.step-dot {
+    background: #868686;
+}

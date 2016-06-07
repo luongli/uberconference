@@ -8,8 +8,10 @@
   <link rel="stylesheet" type="text/css" href="site.css">
   <link rel="stylesheet" type="text/css" href="contents.css">
   <link rel="stylesheet" type="text/css" href="lightbox.css">
+  <link rel="stylesheet" type="text/css" href="pickmeup.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="jquery.pickmeup.min.js"></script>
 </head>
 
 <body>
@@ -213,7 +215,74 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-8">
+                <div class="col-xs-8 customized-col">
+                  <div style="margin-left: 18px;">
+                    <div class="schedule-input-wrapper" style="width: 412px;">
+                      <input id="conference-title" class="uc-input schedule-input" type="text" placeholder="Name this conference (optional)" value="" tabindex="1">
+                    </div>
+                  </div>
+                  <div class="row" id="second-row-time-holder">
+                    <div class="pure-u">
+                      <div class="schedule-input-wrapper schedule-date" style="width: 180px;">
+                        <div id="schedule-callout"></div>
+                        <div id="sc-date" class="sprite-xs sprite-xs-cal sprint-xs-input"></div>
+                        <input id="conference-date" class="uc-input schedule-input icon-input" type="text" placeholder="2013-10-31" value="June 6th 2016" readonly="" tabindex="2">
+                      </div>
+                    </div>
+                    <div class="pure-u">
+                      <div class="schedule-input-wrapper" style="width: 110px; margin-left: 8px;">
+                        <div class="form-dropdown">
+                          <div class="sprite-xs sprite-xs-clock sprint-xs-input"></div>
+                          <input style="padding-right: 8px;" id="conference-time" class="uc-input editable-text schedule-input icon-input time-click" type="text" placeholder="Time" value="" tabindex="3">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pure-u">
+                      <div class="schedule-input-wrapper" style="width: 74px; margin-left: 8px;">
+                        <div class="form-dropdown">
+                          <input id="conference-duration" style="padding: 14px 8px;" class="uc-input
+                          schedule-input duration-click" type="text" placeholder="60 min" value="" tabindex="4">
+                          <ul id="conference-duration-menu" class="schedule-menu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0" style="display: none;" aria-activedescendant="ui-id-237">
+                            <li class="ui-menu-item" role="presentation"><a id="ui-id-236" class="ui-corner-all" tabindex="-1" role="menuitem">15 min</a></li>
+                            <li class="ui-menu-item" role="presentation"><a id="ui-id-237" class="ui-corner-all" tabindex="-1" role="menuitem">30 min</a></li>
+                            <li class="ui-menu-item" role="presentation"><a id="ui-id-238" class="ui-corner-all" tabindex="-1" role="menuitem">60 min</a></li>
+                            <li class="ui-menu-item" role="presentation"><a id="ui-id-239" class="ui-corner-all" tabindex="-1" role="menuitem">90 min</a></li>
+                            <li class="ui-menu-item" role="presentation"><a id="ui-id-240" class="ui-corner-all" tabindex="-1" role="menuitem">120 min</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <a id="duration-help-icon" href="http://help.uberconference.com/customer/portal/articles/1854557" target="_uberconference_duration_help" class="sprite-xs sprite-xs-question-mark-white-bg pure-u" style="margin-top:5px" aria-describedby="ui-tooltip-14"></a>
+                    <div style="margin-top: 16px;">
+                      <div class="schedule-input-wrapper" style="width: 180px;">
+                        <div class="form-dropdown">
+                          <div class="sprite-xs sprite-xs-hyperloop sprint-xs-input recurrence-click"></div>
+                          <input id="conference-recurrence" type="text" placeholder="Non Recurring" class="uc-input schedule-input icon-input recurrence-click" value="" readonly="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">                        
+                        <div style="margin-top: 19px;">
+                          <span id="current-timezone">Timezone:
+                          <span id="current-timezone-select" class="link">US/Pacific</span></span>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="pure-u">
+                          <div id="cancel" class="link lightbox-back button-height-text" style="margin-top: 8px;">Cancel</div>
+                        </div>
+                        <div class="pure-u">
+                          <div id="next-step" class="button button-blue button-medium" style="margin-top:
+                          8px;" tabindex="5">Next Step</div>
+                          <div class="schedule-dots center">
+                            <div class="pure-u dot step-dot-on circle"></div>
+                            <div class="pure-u dot step-dot circle"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
