@@ -3,6 +3,7 @@ document.onload = setDateTime();
 function setDateTime() {
 	setDate();
 	runClock();
+	addDatePicker();
 }
 
 function runClock() {
@@ -77,4 +78,10 @@ function setDate() {
 	}
 
 	calendar.innerHTML = content;
+}
+
+function addDatePicker() {
+	$(".schedule-calendar").pickmeup({
+		flat	: true
+	});
 }
