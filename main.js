@@ -97,8 +97,77 @@ function showLightBox() {
 		inline:true,
 		href:$form});
 	addDatePicker();
+	addTimeMenu();
+}
+
+function addTimeMenu() {
+	var i = 0;
+	var j = 0;
+	var tmp;
+	var content = "";
+	var d = new Date();
+	var currentHour = Number(d.getHours());
+	for(i = 0; i < 24; i++) {
+		for(j = 0; j < 60; j+=15) {
+			if(i < currentHour) {
+				if(i <= 12) {
+					content += '<li class="ui-menu-item disabled" role="presentation"><a id="ui-id-39" class="ui-corner-all" tabindex="-1" role="menuitem">' + i +':'+j+' am</a></li>' + '\n';
+				} else {
+					tmp = i - 12;
+					content += '<li class="ui-menu-item disabled" role="presentation"><a id="ui-id-39" class="ui-corner-all" tabindex="-1" role="menuitem">' + tmp +':'+j+' pm</a></li>' + '\n';
+				}
+			}else {
+				if(i <= 12) {
+					content += '<li class="ui-menu-item" role="presentation"><a id="ui-id-39" class="ui-corner-all" tabindex="-1" role="menuitem">' + i +':'+j+' am</a></li>' + '\n';
+				} else {
+					tmp = i - 12;
+					content += '<li class="ui-menu-item" role="presentation"><a id="ui-id-39" class="ui-corner-all" tabindex="-1" role="menuitem">' + tmp +':'+j+' pm</a></li>' + '\n';
+				}
+			}
+			
+		}		
+	}
+	$('#conference-time-menu').html(content);
+	$('#conference-time-menu li a').click(function(){
+		console.log($(this).html());
+		$('#conference-time').val($(this).html());
+	});
 }
 
 function hideLightBox() {
 	$.colorbox.close();
+}
+
+function showConferenceDuration() {
+	console.log('ok');
+	var conference_duration_menu = $("#conference-duration-menu");
+	conference_duration_menu.css({'display': 'block'});
+}
+
+$(document).click(function(){
+	$("#conference-duration-menu").css({'display': 'none'});
+	$('#conference-time-menu').css({'display': 'none'});
+	$('#submenu').css({'display': 'none'});
+	$('#app-menu').css({'display': 'none'});
+	$('#user-menu').css({'display': 'none'});
+});
+
+$('#conference-duration').click(function(e){
+	showConferenceDuration();
+	e.stopPropagation();
+});
+
+$('#conference-duration-menu li a').click(function(){
+	var content = $(this).html();
+	console.log(content);
+	$('#conference-duration').val(content);
+});
+
+$('#conference-time').click(function(e){
+	showConferenceTimeMenu();
+	e.stopPropagation();
+});
+
+function showConferenceTimeMenu() {
+	$('#conference-time-menu').css({'display': 'block'});
 }

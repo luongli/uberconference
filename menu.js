@@ -35,6 +35,8 @@ function hideAppMenu() {
         }
     }
 
+    hideSubmenu();
+
     //menu.style.display = "none";
 }
 
