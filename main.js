@@ -83,8 +83,37 @@ function setDate() {
 function addDatePicker() {
 	$(".schedule-calendar").pickmeup({
 		flat	: true,
-		change	: function(formated){ $("#conference-date").val(formated);}
+		change	: function(formated){ changeDate(formated);}
 	});
+}
+
+var Months = ["January", "February", "March",
+	"April", "May", "June",
+	"July", "August", "September",
+	"October", "November", "December"
+	];
+
+function changeDate(formated) {
+	var tokens = formated.split('-');
+	var formatedDate = [];
+	switch(tokens[0]%10) {
+		case 1:
+			formatedDate[1] = tokens[0] + 'st';
+			break;
+		case 2:
+			formatedDate[1] = tokens[0] + 'nd';
+			break;
+		case 3:
+			formatedDate[1] = tokens[0] + 'rd';
+			break;
+		default:
+			formatedDate[1] = tokens[0] + 'th';
+	}
+
+	formatedDate[0] = Months[tokens[1]-1];
+	formatedDate[2] = tokens[2];
+
+	$("#conference-date").val(formatedDate.join(' '));
 }
 
 function showLightBox() {
@@ -98,6 +127,7 @@ function showLightBox() {
 		href:$form});
 	addDatePicker();
 	addTimeMenu();
+	addTimeZone();
 }
 
 function addTimeMenu() {
@@ -132,6 +162,11 @@ function addTimeMenu() {
 		console.log($(this).html());
 		$('#conference-time').val($(this).html());
 	});
+}
+
+function addTimeZone() {
+	var zonenames = moment.tz.names();
+	console.log(zonenames.length);
 }
 
 function hideLightBox() {

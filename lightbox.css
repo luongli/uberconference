@@ -492,3 +492,8 @@ input.uc-input {
     background: #868686;
 }
 
+#show-all-timezones {
+    margin-left: 3px;
+    font-size: 10px;
+    vertical-align: middle;
+}
