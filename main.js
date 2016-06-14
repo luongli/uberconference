@@ -165,9 +165,25 @@ function addTimeMenu() {
 }
 
 function addTimeZone() {
-	var zonenames = moment.tz.names();
+	/*var zonenames = moment.tz.names();
 	console.log(zonenames.length);
+	console.log(zonenames[0]);
+	console.log(moment.tz.zone('America/Los_Angeles'));*/
+	$('#timezone-selector').timezones();
+	$('#timezone-selector').change(function(){
+		var city = $(this).val();
+		$('#timezone-select-container').css({'display': 'none'});
+		$('#current-timezone-select').html(city);
+		$('#current-timezone').css({'display': 'block'});
+	});
 }
+
+
+function showTimeZoneSelector() {
+	$('#current-timezone').css({'display': 'none'});
+	$('#timezone-select-container').css({'display': 'block'});
+}
+
 
 function hideLightBox() {
 	$.colorbox.close();
